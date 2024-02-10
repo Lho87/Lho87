@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <style>
+        /* スタイリング */
+    </style>
+</head>
+<body>
+    <input type="file" accept="image/*" id="fileInput">
+    <button onclick="searchImage()">Search</button>
+
+    <script>
+        function searchImage() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            // 画像をサーバーに送信するためのAjaxリクエスト
+            // ここに実装
+        }
+    </script>
+</body>
+</html>
